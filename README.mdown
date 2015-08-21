@@ -18,12 +18,12 @@ python /path/to/s3filesync.py
 
 To automate add the script to your crontab by typing:
 
-'''shell
+```shell
 crontab -e
-'''
+```
 
 and adding the following line replacing the *'s with how regularly you would like to sync from S3
 
-'''shell
+```shell
 * * * * * /path/to/s3logsync.py > /path/to/error.log 2>&1
-'''
+```
