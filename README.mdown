@@ -8,7 +8,7 @@ S3filesync is a very simple automation script and requires the python applicatio
 
 It is designed to be used in a UNIX like enviroment and has been tested in Ubuntu 14.04 but *should* work on other Linux distributions, BSD's and OSX. If you are running the script in these enviroments please let me know how you get on!
 
-To install simply clone the repo and edit the variables prefixed cfg_ to your s3 fodler, local folder and logging folder.
+To install simply clone the repo and edit the variables prefixed cfg_ to your s3 folder, local folder and logging folder.
 
 ## Usage
 
