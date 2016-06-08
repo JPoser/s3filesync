@@ -1,6 +1,6 @@
 # S3filesync
 
-A script to automate the syncing of a folder from Amazon S3 to local storage. The script wraps around [s4cmd's](https://github.com/bloomreach/s4cmd) rsync like functionality and provides logging of synced files and error messages. It is designed to be automate the task using Cron.
+A script to automate the syncing of a folder from Amazon S3 to local storage. The script wraps around [s4cmd's](https://github.com/bloomreach/s4cmd) rsync like functionality and provides logging of synced files. It is designed to be run using crontab and error logging is not built in to the script. Basic logging can be achieved by redirecting stdout to an error log.
 
 ## Installation
 
@@ -14,7 +14,7 @@ To install simply clone the repo and edit the variables prefixed cfg_ to your s3
 
 To sync files run: 
 
-python /path/to/s3filesync.py
+python /path/to/s3filesync.py >> /path/to/error.log
 
 To automate add the script to your crontab by typing:
 
@@ -25,5 +25,5 @@ crontab -e
 and adding the following line replacing the *'s with how regularly you would like to sync from S3
 
 ```shell
-* * * * * /path/to/s3logsync.py > /path/to/error.log 2>&1
+* * * * * /path/to/s3logsync.py >> /path/to/error.log 2>&1
 ```
