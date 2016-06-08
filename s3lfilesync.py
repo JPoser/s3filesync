@@ -1,7 +1,6 @@
 
 import subprocess
 import logbook
-from getpass import getuser
 
 
 cfg_s3folder = 
